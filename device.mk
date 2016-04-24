@@ -202,6 +202,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
+# Doze mode
+PRODUCT_PACKAGES += \
+    XiaomiDoze
+
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
