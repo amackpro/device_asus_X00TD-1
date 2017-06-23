@@ -43,7 +43,6 @@ on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
     mount_all /vendor/etc/fstab.qcom
-    swapon_all /vendor/etc/fstab.qcom
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
     mkdir /mnt/vendor/persist/data 0700 system system
@@ -97,7 +96,10 @@ on boot
     chown system system /persist/speccfg/submask
     chown system system /persist/speccfg/partition
 
-#Create folder dump yuv images while debugging
+    # Enable ZRAM on boot_complete
+    swapon_all /vendor/etc/fstab.qcom
+
+    #Create folder dump yuv images while debugging
     mkdir /data/vendor/camera 0770 camera camera
 
     # Lights
