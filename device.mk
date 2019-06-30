@@ -204,7 +204,7 @@ PRODUCT_COPY_FILES += \
 
 # Doze mode
 PRODUCT_PACKAGES += \
-    XiaomiDoze
+    Doze
 
 # FM
 PRODUCT_PACKAGES += \
