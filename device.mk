@@ -551,3 +551,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
 $(call inherit-product, vendor/asus/X00TD/X00TD-vendor.mk)
+
+# ZenParts
+PRODUCT_PACKAGES += \
+    ZenParts
