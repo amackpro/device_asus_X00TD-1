@@ -27,7 +27,7 @@
 #define MAX_L2CAP_CHANNELS    20
 #define BLE_VND_INCLUDED   TRUE
 // skips conn update at conn completion
-#define BT_CLEAN_TURN_ON_DISABLED 1
+#define BT_CLEAN_TURN_ON_DISABLED TRUE
 
 /* Increasing SEPs to 12 from 6 to support SHO/MCast i.e. two streams per codec */
 #define AVDT_NUM_SEPS 12
