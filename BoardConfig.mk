@@ -213,6 +213,9 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
 
+# IPA
+USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true
+
 # Power
 TARGET_USES_INTERACTION_BOOST := true
 TARGET_TAP_TO_WAKE_NODE := "/sys/kernel/touchpanel/dclicknode"
