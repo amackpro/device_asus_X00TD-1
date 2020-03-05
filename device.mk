@@ -530,6 +530,11 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf \
     wifi-mac-generator
 
+# SurfaceFlinger and Hardware Acceleration Tweaks
+PRODUCT_PROPERTY_OVERRIDES += \
+   debug.sf.disable_backpressure=1 \
+   video.accelerate.hw=1
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/fstman.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/fstman.ini \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
