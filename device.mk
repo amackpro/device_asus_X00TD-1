@@ -317,6 +317,10 @@ PRODUCT_PACKAGES += \
     libregistermsext \
     mediametrics
 
+# Mix
+PRODUCT_PACKAGES += \
+    mix
+
 # Netutils
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.0 \
