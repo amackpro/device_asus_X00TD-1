@@ -13,9 +13,15 @@ allow vendor_init {
   nfc_data_file
 }:dir { create search getattr open read setattr ioctl write add_name remove_name rmdir relabelfrom };
 
-
 allow vendor_init media_rw_data_file:file create_file_perms;
 allow vendor_init system_data_file:lnk_file create;
+allow vendor_init mnt_vendor_file:lnk_file { read };
+allow vendor_init media_rw_data_file:file { relabelfrom };
+allow vendor_init block_device:lnk_file { setattr };
+allow vendor_init sysfs:lnk_file { setattr getattr };
 
 # Allow vendor_init to set persist_camera_prop
 set_prop(vendor_init, persist_camera_prop)
+
+set_prop(vendor_init, camera_prop)
+

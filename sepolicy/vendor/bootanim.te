@@ -1,0 +1,2 @@
+dontaudit bootanim vendor_file:file { getattr };
+allow bootanim sysfs_kgsl:dir { search }; 
