@@ -203,7 +203,7 @@ PRODUCT_COPY_FILES += \
 
 # Doze mode
 PRODUCT_PACKAGES += \
-    Doze
+    OneplusDoze
 
 # FM
 PRODUCT_PACKAGES += \
